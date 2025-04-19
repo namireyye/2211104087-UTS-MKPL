@@ -1,13 +1,11 @@
 package lib;
 
 public class TaxFunction {
-
 	private static final int BASE_NON_TAXABLE = 54000000;
 	private static final int MARRIED_DEDUCTION = 4500000;
 	private static final int CHILD_DEDUCTION = 4500000;
 	private static final int MAX_CHILDREN = 3;
 	private static final double TAX_RATE = 0.05;
-
 	public static int calculateTax(int monthlySalary, int otherMonthlyIncome, int numberOfMonthWorking,
 										int deductible, boolean isMarried, int numberOfChildren) {
 		if (numberOfMonthWorking > 12) {
